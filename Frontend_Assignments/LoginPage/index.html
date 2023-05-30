@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login|Sign Up page</title>
+    <!--icons links-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!--css file -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Login</span>
+          <!--form starts-->
+          <form action="#">
+            <!--email input -->
+            <div class="input-feild">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope icon"></i>
+            </div>
+            <!--email input end -->
+            <!--password input -->
+            <div class="input-feild">
+              <input
+                type="password"
+                placeholder="Enter your password"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash hide-eye"></i>
+            </div>
+            <!--password input end -->
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logo-check" />
+                <label for="logo-check" class="text">Remember me</label>
+              </div>
+              <a href="#" class="forgot-password">Forgot Password</a>
+            </div>
+
+            <div class="input-feild button">
+              <input type="button" value="Login Now" />
+            </div>
+          </form>
+          <!--form end-->
+          <div class="login-signup">
+            <p>U don't have account?</p>
+            <a href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

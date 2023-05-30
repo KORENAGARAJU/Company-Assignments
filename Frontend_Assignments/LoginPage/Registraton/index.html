@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login|Sign Up page</title>
+    <title>Sign Up page</title>
     <!--icons links-->
     <link
       rel="stylesheet"
@@ -12,15 +12,21 @@
     />
 
     <!--css file -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body id="login">
     <div class="container">
       <div class="forms">
+        <!--Registration-->
         <div class="form login">
-          <span class="title">Login</span>
+          <span class="title">Registration</span>
           <!--form starts-->
           <form action="#">
+            <!--name -->
+            <div class="input-feild">
+              <input type="text" placeholder="Enter your name" required />
+              <i class="uil uil-user icon"></i>
+            </div>
             <!--email input -->
             <div class="input-feild">
               <input type="email" placeholder="Enter your email" required />
@@ -31,34 +37,26 @@
             <div class="input-feild">
               <input
                 type="password"
-                placeholder="Enter your password"
                 class="password"
+                placeholder="Enter your password"
                 required
               />
               <i class="uil uil-lock icon"></i>
               <i class="uil uil-eye-slash hide-eye"></i>
             </div>
             <!--password input end -->
-            <div class="checkbox-text">
-              <div class="checkbox-content">
-                <input type="checkbox" id="logo-check" />
-                <label for="logo-check" class="text">Remember me</label>
-              </div>
-              <a href="#" class="forgot-password">Forgot Password</a>
-            </div>
-
             <div class="input-feild button">
-              <input type="submit" value="Login Now" />
+              <input type="submit" value="Sign up" />
             </div>
           </form>
           <!--form end-->
           <div class="login-signup">
-            <p>U don't have account?</p>
-            <a href="./Registraton/index.html">Sign up</a>
+            <p>Already have account?</p>
+            <a href="../index.html">Login</a>
           </div>
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

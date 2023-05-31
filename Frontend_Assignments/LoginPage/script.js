@@ -98,7 +98,7 @@ const loginBtn = document.querySelector('.loginBtn') ;
 loginBtn.addEventListener('click',(e)=>{
     e.preventDefault() ;
     if(loginEmail.value === ''){
-        const  errorEmailName = 'Email is requried'
+        const  errorEmailName = 'Email/UserName is requried'
         errorEmailLogin.textContent = errorEmailName ;
         loginEmail.style.borderBottomColor = 'red'
     }

@@ -1,0 +1,148 @@
+/* google font link*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.pexels.com/photos/1529881/pexels-photo-1529881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+   position: relative;
+   max-width: 450px;
+   background-color: rgb(255, 255, 255);
+   width: 100%;
+   box-shadow: 0 10px 5px rgb(0,0,0,0.1);
+   border-radius: 10px;
+}
+
+.container .form{
+    padding: 30px; 
+}
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+.form .title::before{
+    content:'';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    background-color: rgb(98, 98, 255) ;
+    border-radius: 25px
+}
+.form .input-feild{
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+.input-feild input{
+    padding: 0 35px ;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(185, 185, 185) ;
+    border-top: 2px solid transparent ;
+    font-size: 16px;
+    position: absolute;
+}
+.input-feild i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(93, 93, 93);
+    font-size: 24px;
+}
+.icon{
+    left: 0;
+}
+.hide-eye{
+    right: 0;
+    cursor: pointer;
+}
+.hide-eye-login{
+    right: 0;
+    cursor: pointer;
+}
+.input-feild input:focus {
+    border-bottom: 2px solid  rgb(98, 98, 255); ;
+}
+.input-feild input:focus ~ .icon {
+    color:rgb(98, 98, 255); ;
+}
+.checkbox-text{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 25px;   
+    padding: 5px;
+}
+.forgot-password{
+    text-decoration: none;
+    color: rgb(124, 124, 244);
+}
+.forgot-password:hover{
+    color: rgb(0, 0, 255);
+}
+.text{
+    position: absolute;
+    left:25px;
+    top:3px;
+    color: #303030;
+}
+.login-signup{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.login-signup a{
+    padding-left: 15px;
+    text-decoration: none;
+    color: rgb(106, 106, 252);
+}.SignupBtn:hover{
+    cursor: pointer;
+}
+.loginBtn{
+    cursor: pointer;
+}
+.login-signup a:hover{
+    cursor: pointer;
+    color:  rgb(0, 0, 255) ;
+}
+.button input{
+    position: absolute;
+    top: 12px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(53, 53, 255);
+    color: white;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.button input:hover{
+    background-color: rgb(0, 0, 252);
+}
+
+/*error styles*/
+.error{
+    font-size: 12px;
+    color: red;
+}

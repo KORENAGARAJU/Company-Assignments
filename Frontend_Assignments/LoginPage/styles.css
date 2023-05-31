@@ -75,6 +75,10 @@ body{
     right: 0;
     cursor: pointer;
 }
+.hide-eye-login{
+    right: 0;
+    cursor: pointer;
+}
 .input-feild input:focus {
     border-bottom: 2px solid  rgb(98, 98, 255); ;
 }
@@ -112,8 +116,14 @@ body{
     padding-left: 15px;
     text-decoration: none;
     color: rgb(106, 106, 252);
+}.SignupBtn:hover{
+    cursor: pointer;
+}
+.loginBtn{
+    cursor: pointer;
 }
 .login-signup a:hover{
+    cursor: pointer;
     color:  rgb(0, 0, 255) ;
 }
 .button input{
@@ -129,4 +139,10 @@ body{
 }
 .button input:hover{
     background-color: rgb(0, 0, 252);
+}
+
+/*error styles*/
+.error{
+    font-size: 12px;
+    color: red;
 }

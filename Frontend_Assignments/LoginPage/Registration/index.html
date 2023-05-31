@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login|Sign Up page</title>
+    <!--icons links-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!--css file -->
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body id="login">
+    <div class="container">
+      <div class="forms">
+          <!--Registration page-->
+          <div class="form login">
+            <span class="title">Registration</span>
+            <!--form starts-->
+            <form action="#">
+              <!--name -->
+              <div class="input-feild">
+                <input type="text" placeholder="Enter your name" id="reg-name-id"/>
+                <i class="uil uil-user icon"></i>
+              </div>
+              <p class="reg-name error"></p>
+              <!--email input -->
+              <div class="input-feild">
+                <input type="email" placeholder="Enter your email"
+                id="reg-email-id" />
+                <i class="uil uil-envelope icon"></i>
+              </div>
+              <p class="reg-email error"></p>
+              <!--email input end -->
+              <!--password input -->
+              <div class="input-feild">
+                <input
+                  type="password"
+                  class="password"
+                  placeholder="Enter your password"
+                  id="reg-pass-id"
+                />
+                <i class="uil uil-lock icon"></i>
+                <i class="uil uil-eye-slash hide-eye hide-eye-login"></i>
+              </div>
+              <p class="reg-password error"></p>
+              <!--password input end -->
+              <div class="input-feild button">
+                <input type="submit" value="Sign up"  class="SignupBtn" />
+              </div>
+              <div class="loginBtn"></div>
+            </form>
+            <!--form end-->
+            <div class="login-signup">
+              <p>Already have account?</p>
+              <!--link to another page -->
+              <a href="../index.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -146,3 +146,8 @@ body{
     font-size: 12px;
     color: red;
 }
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
